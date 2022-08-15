@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:#F3F3F3;
+}
+
+/* 头部样式 */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color: #0089e6;
+  opacity: 0.7;
+  top:0px;
+  position:fixed;
+  width:100%;
+}
+
+/* 导航栏网站标题 */
+.navtittle{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background:#0079cc;
+}
+
+
+/* 导航链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 链接 - 修改颜色 */
+.topnav a:hover {
+  background-color: #1aa2ff;
+  color: white;
+}
+
+/* 创建三个不相等的列 */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* 右侧宽度 */
+.column.side {
+  width: 35%;
+  background:white;
+  margin:0 0 0 15px;
+  border-radius: 20px;
+  padding:20px 0 0 20px;
+}
+
+/* 中间区域宽度 */
+.column.middle {
+  width: 60%;
+  background:white;
+  margin:0 25px 0 15px;
+  border-radius: 20px;
+  padding:20px 0 0 20px;
+}
+
+.row{
+  text-align:left;
+}
+
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 响应式布局 - 宽度小于800px时设置上下布局 */
+@media screen and (max-width: 1000px) {
+  .column.side, .column.middle {
+    width: 95%;
+  }
+}
+
+.tipper{
+border-left:6px solid #ccc;
+border-color: #2196F3;
+padding:8px 8px 8px 8px;
+}
+
+.footer{
+  margin:0 0 0 15px;
+  color:#5C5C5C;
+  font-size:15px;
+}
+
+.footer a{
+  display: block;
+  color:#5C5C5C;
+  text-decoration: none;
+}
+
+.wid{
+  width:95%;
+}
+
+#hitokoto
+{
+    display:none;
+}
+#hitokoto_link
+{
+    text-decoration:none;
+    color:black;
+}
+
+.button_green {
+    padding: 7px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 20%;
+
+    background-color: white; 
+    color: black; 
+    border: 3px solid #4CAF50;
+}
+
+.button_green a {
+    color: black;
+    text-decoration-line: none;
+}
+
+.button_green:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button_green:hover a {
+    color: white;
+    text-decoration-line: none;
+}
+
+.num{
+    font-size: 18px;
+    border-radius: 10px;
+    width: 70%;
+    padding: 10px 10px 10px 10px;
+    margin: 0 0 0 0;
+    border-color: #5EC279;
+}
+
+.copy-button {
+    position: relative;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    /*z-index: 1;*/
+    width: 20%;
+}
+
+.copy-button .docs {
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    gap: 6px;
+    min-height: 40px;
+    padding: 3px 7px 3px 7px;
+    margin: 0;
+    border-radius: 4px;
+    /*z-index: 1;*/
+    background-color: #242a35;
+    /*border: solid 1px #e8e8e82d;*/
+    border: none;
+    transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.copy-button .docs a{
+    color: white;
+    text-decoration-line: none;
+}
